@@ -1,0 +1,36 @@
+### Create a product
+POST {{host}}/product
+Content-Type: application/json
+
+{
+  "name": "Test Product 2",
+  "price": 17900,
+  "stock": 19
+}
+
+### Fetch products
+GET {{host}}/product
+Content-Type: application/json
+
+### Fetch products
+GET {{host}}/product?foo=1&bar=2
+Content-Type: application/json
+
+### Fetch a product
+GET {{host}}/product/1
+Content-Type: application/json
+
+### Fetch a product
+GET {{host}}/product/1?foo=bar
+Content-Type: application/json
+
+### Update a product
+PUT {{host}}/product
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Test Product 1",
+  "price": 77900,
+  "stock": 141
+}
